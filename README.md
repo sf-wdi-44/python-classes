@@ -121,7 +121,7 @@ class BankAccount():
     self.balance += amount
   
   def withdraw(self, amount):
-    self.amount -= amount
+    self.balance -= amount
     if (self.amount < 0):
       self.overdraft_fees += 20
     return amount
